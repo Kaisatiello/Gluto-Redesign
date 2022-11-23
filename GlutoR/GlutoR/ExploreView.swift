@@ -19,9 +19,11 @@ struct ExploreView: View {
                             CategButton(CategName: "Pasta")
                             CategButton(CategName: "Pizza")
                             CategButton(CategName: "Croissant")
+                            CategButton(CategName: "Burgher")
                             CategButton(CategName: "Bread")
                             CategButton(CategName: "Gelato")
                             CategButton(CategName: "Veggies")
+                            CategButton(CategName: "Sushi")
                             CategButton(CategName: "Fish")
                         }
                     }//ScrollView
@@ -32,7 +34,9 @@ struct ExploreView: View {
                         .padding(.top,18)
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack (spacing: 10){
-                            ShopsButton(ShopImage: "TheSign1", ShopName: "The Sign", ShopType: "Burghers,cakes", ShopRating: "4,9")
+                            NavigationLink(destination: RestaurantView(), label: {ShopsButton(ShopImage: "TheSign1", ShopName: "The Sign", ShopType: "Burghers,cakes", ShopRating: "4,9")
+                                
+                            })
                             ShopsButton(ShopImage: "Nihon", ShopName: "Nihon       ", ShopType: "Sushi, poke bowls", ShopRating: "4,7")
                         }
                     }

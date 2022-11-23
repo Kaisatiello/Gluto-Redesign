@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12479A2A292E17F400E2F8B3 /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12479A29292E17F400E2F8B3 /* RestaurantView.swift */; };
+		12479A2C292E357000E2F8B3 /* FiveStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12479A2B292E357000E2F8B3 /* FiveStarView.swift */; };
+		12479A2E292E898700E2F8B3 /* FoodSecurityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12479A2D292E898700E2F8B3 /* FoodSecurityButton.swift */; };
+		12479A31292E8EF000E2F8B3 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12479A30292E8EF000E2F8B3 /* PickerView.swift */; };
 		126B9E8B292D3B6C00798AC5 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B9E8A292D3B6C00798AC5 /* MapView.swift */; };
 		126B9E8D292D3BBD00798AC5 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B9E8C292D3BBD00798AC5 /* SearchView.swift */; };
 		126B9E8F292D3BCB00798AC5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B9E8E292D3BCB00798AC5 /* ProfileView.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12479A29292E17F400E2F8B3 /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
+		12479A2B292E357000E2F8B3 /* FiveStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveStarView.swift; sourceTree = "<group>"; };
+		12479A2D292E898700E2F8B3 /* FoodSecurityButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSecurityButton.swift; sourceTree = "<group>"; };
+		12479A30292E8EF000E2F8B3 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		126B9E8A292D3B6C00798AC5 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		126B9E8C292D3BBD00798AC5 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		126B9E8E292D3BCB00798AC5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -44,6 +52,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12479A2F292E8EC500E2F8B3 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				1276560A292B883A00CF5A66 /* CategButton.swift */,
+				12765606292676F900CF5A66 /* ShopsButton.swift */,
+				12479A2D292E898700E2F8B3 /* FoodSecurityButton.swift */,
+				12479A30292E8EF000E2F8B3 /* PickerView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		127ED16F2925042200511E9B = {
 			isa = PBXGroup;
 			children = (
@@ -69,8 +88,9 @@
 				126B9E8A292D3B6C00798AC5 /* MapView.swift */,
 				126B9E8C292D3BBD00798AC5 /* SearchView.swift */,
 				126B9E8E292D3BCB00798AC5 /* ProfileView.swift */,
-				1276560A292B883A00CF5A66 /* CategButton.swift */,
-				12765606292676F900CF5A66 /* ShopsButton.swift */,
+				12479A29292E17F400E2F8B3 /* RestaurantView.swift */,
+				12479A2B292E357000E2F8B3 /* FiveStarView.swift */,
+				12479A2F292E8EC500E2F8B3 /* Buttons */,
 				127ED17F2925042300511E9B /* Assets.xcassets */,
 				127ED1812925042300511E9B /* Preview Content */,
 			);
@@ -159,7 +179,11 @@
 				127ED17E2925042200511E9B /* ContentView.swift in Sources */,
 				126B9E8B292D3B6C00798AC5 /* MapView.swift in Sources */,
 				12765607292676F900CF5A66 /* ShopsButton.swift in Sources */,
+				12479A2C292E357000E2F8B3 /* FiveStarView.swift in Sources */,
+				12479A2E292E898700E2F8B3 /* FoodSecurityButton.swift in Sources */,
 				126B9E8D292D3BBD00798AC5 /* SearchView.swift in Sources */,
+				12479A2A292E17F400E2F8B3 /* RestaurantView.swift in Sources */,
+				12479A31292E8EF000E2F8B3 /* PickerView.swift in Sources */,
 				127ED18A292650E700511E9B /* ExploreView.swift in Sources */,
 				1276560B292B883A00CF5A66 /* CategButton.swift in Sources */,
 				127ED17C2925042200511E9B /* GlutoRApp.swift in Sources */,

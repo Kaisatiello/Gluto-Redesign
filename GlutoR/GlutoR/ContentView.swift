@@ -18,11 +18,11 @@ struct ContentView: View {
                         .withSymbolicTraits(.traitBold)
                         ??
                         titleFont.fontDescriptor,
-                    size: titleFont.pointSize
-                )
+                    size: titleFont.pointSize)
+        
                let navBarAppearance = UINavigationBar.appearance()
         navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor(Color("CategText")), .font: titleFont]
-               navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor(Color("CategText"))]
+               navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor(Color("CategText")), /*.font: titleFont*/]
         UITabBar.appearance().barTintColor = UIColor(named: "BgColor")
         //UITabBar.appearance().tintColor = UIColor(named: "TBItemColor")
              }
@@ -61,6 +61,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().colorScheme(.light)
+        ContentView().colorScheme(.dark)
     }
 }
