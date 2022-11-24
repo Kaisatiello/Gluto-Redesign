@@ -15,7 +15,7 @@ struct ExploreView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 10) {
                     ScrollView(.horizontal, showsIndicators: false){
-                        HStack(alignment: .top){
+                        HStack(alignment: .top,spacing: -20){
                             CategButton(CategName: "Pasta")
                             CategButton(CategName: "Pizza")
                             CategButton(CategName: "Croissant")
@@ -28,12 +28,17 @@ struct ExploreView: View {
                         }
                     }//ScrollView
                     .shadow(radius: 4, x: 2, y: 2)
-                    Text("Your Favourites")
-                        .font(.system( .title2, design: .rounded))
-                        .fontWeight(.semibold)
-                        .padding(.top,18)
+                    HStack {
+                        Text("Your Favourites")
+                            .font(.system( .title2, design: .rounded))
+                            .fontWeight(.semibold)
+                            .padding(.top,18)
+                            .padding(.leading)
+                        Text(Image(systemName: "heart.fill"))
+                            .padding(.top,18)
+                                                }
                     ScrollView(.horizontal, showsIndicators: false) {
-                        HStack (spacing: 10){
+                        HStack (spacing: -17){
                             NavigationLink(destination: RestaurantView(), label: {ShopsButton(ShopImage: "TheSign1", ShopName: "The Sign", ShopType: "Burghers,cakes", ShopRating: "4,9")
                                 
                             })
@@ -45,8 +50,9 @@ struct ExploreView: View {
                         .font(.system( .title2, design: .rounded))
                         .fontWeight(.semibold)
                         .padding(.top,18)
+                        .padding(.leading)
                     ScrollView(.horizontal, showsIndicators: false) {
-                        HStack (spacing: 10){
+                        HStack (spacing: -17){
                             ShopsButton(ShopImage: "Salvo", ShopName: "Pizzeria da Salvo",ShopType: "Pizza,fried food", ShopRating: "4,6")
                             ShopsButton(ShopImage: "GreenHouse", ShopName: "Green       House", ShopType: "Burghers, pasta", ShopRating: "4,9")
                             ShopsButton(ShopImage: "TuttoGelato", ShopName: "Tutto         Gelato", ShopType: "Gelato, cakes", ShopRating: "4")
@@ -57,8 +63,9 @@ struct ExploreView: View {
                         .font(.system( .title2, design: .rounded))
                         .fontWeight(.semibold)
                         .padding(.top,18)
+                        .padding(.leading)
                     ScrollView(.horizontal, showsIndicators: false) {
-                        HStack (spacing: 10){
+                        HStack (spacing: -17){
                             ShopsButton(ShopImage: "CeliachiaPlanet", ShopName: "Celiachia Planet",ShopType: "Fresh bread, pasta", ShopRating: "4,5")
                             ShopsButton(ShopImage: "NsenzaG", ShopName: "Napoli Gluten Free", ShopType: "Croissant,bread", ShopRating: "3,8")
                         }
@@ -67,8 +74,8 @@ struct ExploreView: View {
                 }
         
                 .foregroundColor(Color("CategText"))
-                .padding(.leading)
                 .navigationTitle("Explore")
+                
             }
         }
         

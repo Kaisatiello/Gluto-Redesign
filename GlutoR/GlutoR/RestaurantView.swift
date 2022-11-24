@@ -19,12 +19,20 @@ struct RestaurantView: View {
                             Image("TheSign2")
                                 .resizable()
                                 .frame(width: 343,height: 227)
+                                .accessibilityLabel("Burghers and fries image")
+                                .accessibilityRemoveTraits(.isImage)
+                            
                             Image("TheSign3")
                                 .resizable()
                                 .frame(width: 343,height: 227)
+                                .accessibilityLabel("Cakes image")
+                                .accessibilityRemoveTraits(.isImage)
+                            
                             Image("TheSign4")
                                 .resizable()
                                 .frame(width: 343,height: 227)
+                                .accessibilityLabel("Drink image")
+                                .accessibilityRemoveTraits(.isImage)
                         }
                     }
                     Text("Via Indipendenza 17, Pomigliano D'Arco, NA")
@@ -32,7 +40,8 @@ struct RestaurantView: View {
                         .foregroundColor(Color("CategText"))
                     HStack{
                         FiveStarView()
-                            .padding(.trailing,35)
+                            .padding(.trailing,65)
+                            
                         FoodSecurityButton()
                        /* Image("CertifiedSecurity")
                             .resizable()
@@ -45,6 +54,21 @@ struct RestaurantView: View {
             }
             .padding(.leading)
             .navigationTitle("The Sign")
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                        Button {
+                        print("Favourite button")
+                        } label: {
+                        Image(systemName: "heart.fill")
+                        }
+
+                        Button {
+                        print("Share Button")
+                        } label: {
+                        Image(systemName: "square.and.arrow.up")
+                       }
+                  }
+            }
         }
     }
 }

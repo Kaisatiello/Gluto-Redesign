@@ -9,26 +9,13 @@ import SwiftUI
 
 struct FiveStarView: View {
     var body: some View {
-        ZStack {
-            HStack{
-                Image(systemName: "star.fill")
-                Image(systemName: "star.fill")
-                Image(systemName: "star.fill")
-                Image(systemName: "star.fill")
-                Image(systemName: "star.fill")
-                
-            }
-            .foregroundColor(.gray)
-            .opacity(0.4)
-            HStack{
-                Image(systemName: "star.fill")
-                Image(systemName: "star.fill")
-                Image(systemName: "star.fill")
-                Image(systemName: "star.fill")
-                Image(systemName: "star.lefthalf.fill")
-            }
-            .foregroundColor(Color("CardColor"))
-        }
+       
+                (Text(Image(systemName: "star.fill")) + Text(Image(systemName: "star.fill")) +  Text(Image(systemName: "star.fill")) +  Text(Image(systemName: "star.fill")) +  Text(Image(systemName: "star.lefthalf.fill")))
+                    .accessibilityRemoveTraits(.isStaticText)
+                    .accessibilityLabel("4.5 out of 5 stars rating")
+                    .font(.headline)
+                .foregroundColor(Color("CardColor"))
+        
     }
 }
 struct FiveStarView_Previews: PreviewProvider {

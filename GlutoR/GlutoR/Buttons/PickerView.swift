@@ -41,7 +41,8 @@ struct PickerView: View {
                             .fontWeight(.bold)
                             .padding(.bottom,-5)
                             .padding(.top,-3)
-                        Text("Shortbread Millionaire:").fontWeight(.semibold) + Text(" cookie, caramel, Dulce de Leche, choccolate and salt")
+                       ( Text("Shortbread Millionaire:").fontWeight(.semibold) + Text(" cookie, caramel, Dulce de Leche, choccolate and salt"))
+                            .padding(.bottom)
                     }
                     .foregroundColor(Color("CategText"))
                 } else if restaurantPicker == 1 {
@@ -76,11 +77,11 @@ struct PickerView: View {
                             .padding(.top,-1)
                         Text("Contacts")
                             .fontWeight(.bold)
-                            .padding(.bottom,-4)
+                            .padding(.bottom,-2)
                             .padding(.top,-3)
                         (Text(Image(systemName: "phone")) + Text(" +39 081 461 4676"))
                             .fontWeight(.bold)
-                            .padding(.bottom,-4)
+                            .padding(.bottom,-2)
                         (Text(Image(systemName: "safari")) + Text("  thesign.pub"))
                             .fontWeight(.bold)
                         

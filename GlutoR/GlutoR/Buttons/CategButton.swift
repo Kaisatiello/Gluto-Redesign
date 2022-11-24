@@ -15,6 +15,10 @@ struct CategButton: View {
             .resizable()
             .frame(width: 100,height: 100)
             .accessibilityLabel(CategName)
+            .accessibilityAddTraits(.isButton)
+            .accessibilityRemoveTraits(.isImage)
+            .padding(.leading)
+            .padding(.trailing)
     }
 }
 

@@ -32,7 +32,9 @@ struct ShopsButton: View {
                         .fontWeight(.medium)
                     Text(ShopType)
                         .lineSpacing(-2)
-                    Text(Image(systemName: "star.fill"))+Text(ShopRating)
+                    (Text(Image(systemName: "star.fill"))+Text(ShopRating))
+                        .accessibilityLabel("\(ShopRating) stars rating")
+                        .accessibilityRemoveTraits(.isImage)
                 }
                 .foregroundColor(Color("TextColor"))
                 
@@ -40,6 +42,8 @@ struct ShopsButton: View {
             .frame(width: 290,height: 150)
         }
         .frame(width: 343, height: 208)
+        .padding(.leading)
+        .padding(.trailing)
     }
 }
 
