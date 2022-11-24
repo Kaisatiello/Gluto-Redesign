@@ -15,31 +15,38 @@ struct RestaurantView: View {
             ScrollView{
                 VStack(alignment: .leading){
                     ScrollView(.horizontal, showsIndicators: false){
-                        HStack{
+                        HStack(spacing: -17){
                             Image("TheSign2")
                                 .resizable()
                                 .frame(width: 343,height: 227)
                                 .accessibilityLabel("Burghers and fries image")
                                 .accessibilityRemoveTraits(.isImage)
+                                .padding(.leading)
+                                .padding(.trailing)
                             
                             Image("TheSign3")
                                 .resizable()
                                 .frame(width: 343,height: 227)
                                 .accessibilityLabel("Cakes image")
                                 .accessibilityRemoveTraits(.isImage)
-                            
+                                .padding(.leading)
+                                .padding(.trailing)
                             Image("TheSign4")
                                 .resizable()
                                 .frame(width: 343,height: 227)
                                 .accessibilityLabel("Drink image")
                                 .accessibilityRemoveTraits(.isImage)
+                                .padding(.leading)
+                                .padding(.trailing)
                         }
                     }
                     Text("Via Indipendenza 17, Pomigliano D'Arco, NA")
                         .font(.system( .body, design: .rounded))
                         .foregroundColor(Color("CategText"))
+                        .padding(.leading)
                     HStack{
                         FiveStarView()
+                            .padding(.leading)
                             .padding(.trailing,65)
                             
                         FoodSecurityButton()
@@ -52,7 +59,6 @@ struct RestaurantView: View {
                     
                 }
             }
-            .padding(.leading)
             .navigationTitle("The Sign")
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
@@ -60,12 +66,16 @@ struct RestaurantView: View {
                         print("Favourite button")
                         } label: {
                         Image(systemName: "heart.fill")
+                                .accessibilityLabel("Add to favourites")
+                                .accessibilityAddTraits(.isButton)
+                                .accessibilityRemoveTraits(.isImage)
                         }
 
                         Button {
                         print("Share Button")
                         } label: {
                         Image(systemName: "square.and.arrow.up")
+                                .accessibilityAddTraits(.isButton)
                        }
                   }
             }

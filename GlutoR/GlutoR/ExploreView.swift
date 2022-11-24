@@ -28,15 +28,14 @@ struct ExploreView: View {
                         }
                     }//ScrollView
                     .shadow(radius: 4, x: 2, y: 2)
-                    HStack {
-                        Text("Your Favourites")
+                       
+                    Text("Your Favourites")
                             .font(.system( .title2, design: .rounded))
                             .fontWeight(.semibold)
                             .padding(.top,18)
                             .padding(.leading)
-                        Text(Image(systemName: "heart.fill"))
-                            .padding(.top,18)
-                                                }
+                        
+                                                
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack (spacing: -17){
                             NavigationLink(destination: RestaurantView(), label: {ShopsButton(ShopImage: "TheSign1", ShopName: "The Sign", ShopType: "Burghers,cakes", ShopRating: "4,9")

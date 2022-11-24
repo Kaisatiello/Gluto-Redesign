@@ -94,8 +94,7 @@ struct PickerView: View {
                     .foregroundColor(Color("CategText"))
                 }
             }//VStack
-            .padding(.top)
-            .padding(.trailing)
+            .padding()
         }
 }
 
