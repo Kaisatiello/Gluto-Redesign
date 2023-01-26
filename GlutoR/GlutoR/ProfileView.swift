@@ -9,7 +9,16 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-       Text ("Profile")
+        ZStack {
+            Color("BgColor")
+                .ignoresSafeArea()
+            VStack{
+                Text("Perosonal Info")
+                Text("Know a place?")
+                Text("Review Section: You wrote 1 review")
+            }
+        }
+        .navigationTitle("Profile")
     }
 }
 

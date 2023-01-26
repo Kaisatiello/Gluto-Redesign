@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct SearchView: View {
+   
     var body: some View {
-        Text("Hello, amore bello")
+        ZStack {
+            Color("BgColor")
+                .ignoresSafeArea()
+        }
+        .navigationTitle("Search")
     }
 }
 
